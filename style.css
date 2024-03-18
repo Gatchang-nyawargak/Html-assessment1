@@ -1,13 +1,13 @@
+
 .header{
-    border-width: 100%;
     border: solid 1px green;
-    display: flex;
+    display:flex;
     gap: 100px;
-    border-color: green;
     background-color: green;
+    color: aliceblue;
+    
 
 }
-
 .topnav{
     display: flex;
      justify-content: center;
@@ -21,20 +21,33 @@
 
 }
 #headers{
-    align-content: start;
-}
-.icon{
-    gap: 100px;
 
+    
+
+}
+.image{
+display: flex;
+}
+
+.icons{
+    width: 20px;
 }
 button{
     background-color: green;
     color: antiquewhite;
-    padding: 10px 11px;
     border-radius: 6px;
 }
 .summ{
     display: flex;
+    gap: 350px;
+}
+#pic1{
+    width: 350px;
+    height: 200px;
+}
+#end{
+    align-items: end;
+
 }
 .flex{
     display: flex;
@@ -42,9 +55,17 @@ button{
 }
 .second{
     display: flex;
+    gap: 350px;
 }
 .input{
-    width: 600px;
+    width: 300px;
+
+}
+.blog{
+    display: flex;
+}
+#hd{
+    align-content: center;
 }
 .foot{
     display: flex;
@@ -55,5 +76,70 @@ button{
     gap: 130px;
 }
 .pic{
-    width: 500px;
+    width: 400px;
+  border-radius: 20px;
+}
+.in{
+    width: 100px;
+    
+}
+
+.featur{
+display: flex;
+
+
+}
+.big{
+    display: grid;
+}
+
+.amazing{
+    display: flex;
+}
+@media screen and (max-width: 600px) {
+    header, .topnav, .navbar, .summ, .second, .foot, .imgz, .featur, .amazing {
+        flex-direction: column;
+    }
+
+    .summ, .second, .foot, .imgz {
+        gap: 20px; 
+    }
+
+    .pic{
+        width: 100px;
+    }
+    .in{
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+   
+    header, .topnav, .navbar, .summ, .second, .foot, .imgz, .featur, .amazing {
+        flex-direction: row;
+    }
+
+    .summ, .second, .foot, .imgz {
+        gap: 40px;}
+
+    .pic {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    header, .topnav, .navbar, .summ, .second, .foot, .imgz, .featur, .amazing {
+        flex-direction: row;
+    }
+
+    .summ, .second, .foot, .imgz {
+        gap: 60px; 
+    }
+
+    .pic , .in
+    {
+        width: 100px;
+    }
 }
