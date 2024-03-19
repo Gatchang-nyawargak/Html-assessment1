@@ -63,6 +63,7 @@ button{
 }
 .blog{
     display: flex;
+    flex: auto auto auto auto;
 }
 #hd{
     align-content: center;
@@ -85,12 +86,12 @@ button{
 }
 
 .featur{
-display: flex;
+
 
 
 }
 .big{
-    display: grid;
+    display: flex;
 }
 
 .amazing{
@@ -125,6 +126,9 @@ display: flex;
 
     .pic {
         width: 100px;
+    }
+    .blog{
+     flex-wrap: wrap;
     }
 }
 
